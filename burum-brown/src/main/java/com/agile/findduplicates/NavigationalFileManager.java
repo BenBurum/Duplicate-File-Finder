@@ -1,17 +1,15 @@
 package com.agile.findduplicates;
 
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.zip.CRC32;
-
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
-import sun.plugin.dom.exception.InvalidStateException;
 
 /**
  * This class is used to perform file operations.  It implements the FileManager interface.  Its working directory defaults to the home directory specified by System.getProperty("user.home"), which will vary based on operating system and JVM implementation.  Currently, this class can list files in its directory, change directories, remove files, remove directories, print the current directory's name and absolute path, and identify duplicate files in the current directory.  Todo: hook up with GUI.
