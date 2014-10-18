@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 import static junit.framework.Assert.*;
 
 /**
- * Unit test for simple App.
+ * Unit test for Navigational File Manager.
  */
 public class FileTest {
 
@@ -84,7 +84,7 @@ public class FileTest {
         fm.cd(DIR1);
         assertEquals(DIR1, fm.currentDir());
         fm.cd();
-        assertEquals(DIR_NAME, fm.currentDir());
+        assertEquals(directory.getName().toString(), fm.currentDir());
     }
 
     @Test
